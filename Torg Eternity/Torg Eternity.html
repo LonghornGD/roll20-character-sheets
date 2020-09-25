@@ -4069,10 +4069,16 @@
                             // raise possibilities to 3
                             output.possibilities = 3;
                             output.possibilities_level = 3;
+			    // raise wounds to three
+			    output.plus_wound = 0;
+			    output.wound_max = 3;
                         } else if (newv < 1 && prev > 0) {
                             // drop possibilities to 0
                             output.possibilities = 0;
                             output.possibilities_level = 0;
+			    //drop wounds to zero
+			    output.plus_wound = -3;
+			    output.wound_max = 0;
                         }
                     }
     
